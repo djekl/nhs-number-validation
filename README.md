@@ -1,6 +1,11 @@
 NHS Number Validation
 ========
 
+[![Build Status](https://travis-ci.org/CloudDataService/NHSNumberValidation.svg)](https://travis-ci.org/CloudDataService/NHSNumberValidation)
+[![Total Downloads](https://poser.pugx.org/cloud-data-service/nhs-number-validation/d/total.svg)](https://packagist.org/packages/cloud-data-service/nhs-number-validation)
+[![Version](https://poser.pugx.org/cloud-data-service/nhs-number-validation/version.svg)](https://packagist.org/packages/cloud-data-service/nhs-number-validation)
+[![License](https://poser.pugx.org/cloud-data-service/nhs-number-validation/license.svg)](https://packagist.org/packages/cloud-data-service/nhs-number-validation)
+
 A simple PHP class to validate a NHS Number and return a correctly formatted version.
 
 ## Requirements
