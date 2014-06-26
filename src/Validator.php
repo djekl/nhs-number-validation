@@ -30,7 +30,7 @@ class Validator
             $checksum += (int)$value * (10 - (int)$key);
         }
 
-        // divide the checksum by 11
+        // divide the checksum by 11 and obtain the remainder
         $checksum = $checksum % 11;
 
         // remove 11 from the checksum
