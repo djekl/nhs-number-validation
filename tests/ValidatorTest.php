@@ -103,6 +103,19 @@ class ValidatorTest extends TestCase
         }
     }
 
+    public function testValidNumberWithBadChecksumEqualsEleven()
+    {
+        $validator = new Validator;
+
+        $this->assertTrue(is_object($validator));
+
+        try {
+            $valid = $validator->validate(1000000060);
+        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+            return false;
+        }
+    }
+
     public function testValidNumberWithSpaces()
     {
         $validator = new Validator;
