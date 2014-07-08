@@ -1,7 +1,7 @@
 NHS Number Validation
 ========
 
-[![Build Status](https://travis-ci.org/CloudDataService/NHSNumberValidation.svg)](https://travis-ci.org/CloudDataService/NHSNumberValidation)
+[![Build Status](https://travis-ci.org/CloudDataService/nhs-number-validation.svg)](https://travis-ci.org/CloudDataService/nhs-number-validation)
 [![Total Downloads](https://poser.pugx.org/cloud-data-service/nhs-number-validation/d/total.svg)](https://packagist.org/packages/cloud-data-service/nhs-number-validation)
 [![Version](https://poser.pugx.org/cloud-data-service/nhs-number-validation/version.svg)](https://packagist.org/packages/cloud-data-service/nhs-number-validation)
 [![License](https://poser.pugx.org/cloud-data-service/nhs-number-validation/license.svg)](https://packagist.org/packages/cloud-data-service/nhs-number-validation)
