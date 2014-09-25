@@ -1,15 +1,15 @@
 {
-    "name": "cloud-data-service/nhs-number-validation",
+    "name": "cds/nhs-number-validation",
     "type": "class",
     "description": "A simple PHP class to validate a NHS Number and return a correctly formatted version.",
     "keywords": ["nhs", "validate", "validation"],
     "homepage": "https://github.com/CloudDataService/nhs-number-validation",
-    "license": "MIT",
+    "license": "AGPL v3",
     "authors": [
         {
             "name": "Alan Wynn",
-            "email": "hello@alanwynn.me",
-            "homepage": "http://alanwynn.me",
+            "email": "alan@clouddataservice.co.uk",
+            "homepage": "http://clouddataservice.co.uk",
             "role": "Developer"
         }
     ],
@@ -28,5 +28,6 @@
         "psr-4": {
             "CloudDataService\\NHSNumberValidation\\Test\\": "tests"
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
