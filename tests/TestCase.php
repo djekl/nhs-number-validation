@@ -1,5 +1,5 @@
 <?php
-namespace CloudDataService\NHSNumberValidation\Test;
+namespace djekl\NHSNumberValidation\Test;
 
 use PHPUnit_Framework_TestCase;
 

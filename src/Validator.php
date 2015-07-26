@@ -1,5 +1,5 @@
 <?php
-namespace CloudDataService\NHSNumberValidation;
+namespace djekl\NHSNumberValidation;
 
 /**
  * NHS Number Validation Class

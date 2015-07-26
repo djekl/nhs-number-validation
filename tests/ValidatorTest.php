@@ -1,8 +1,9 @@
 <?php
-namespace CloudDataService\NHSNumberValidation\Test;
+namespace djekl\NHSNumberValidation\Test;
 
-use CloudDataService\NHSNumberValidation\Test\TestCase;
-use CloudDataService\NHSNumberValidation\Validator;
+use djekl\NHSNumberValidation\Test\TestCase;
+use djekl\NHSNumberValidation\Validator;
+use djekl\NHSNumberValidation\InvalidNumberException;
 
 class ValidatorTest extends TestCase
 {
@@ -31,7 +32,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate();
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return;
         }
     }
@@ -44,7 +45,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate(0123);
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return;
         }
     }
@@ -57,7 +58,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate(01234567890);
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return;
         }
     }
@@ -70,7 +71,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate(4010232137);
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return false;
         }
 
@@ -85,7 +86,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate(4010232138);
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return false;
         }
     }
@@ -98,7 +99,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate(1000000010);
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return false;
         }
     }
@@ -111,7 +112,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate(1000000060);
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return false;
         }
     }
@@ -124,7 +125,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate("401 023 2137");
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return false;
         }
 
@@ -139,7 +140,7 @@ class ValidatorTest extends TestCase
 
         try {
             $valid = $validator->validate("401-023-2137");
-        } catch (\CloudDataService\NHSNumberValidation\InvalidNumberException $e) {
+        } catch (InvalidNumberException $e) {
             return false;
         }
 
