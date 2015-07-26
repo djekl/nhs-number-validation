@@ -18,8 +18,8 @@ namespace djekl\NHSNumberValidation;
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @package cds/nhs-number-validation
- * @author Alan Wynn <alan@clouddataservice.co.uk>
+ * @package djekl/nhs-number-validation
+ * @author Alan Wynn <hello@alanwynn.me>
  * @license AGPL v3
  */
 
